@@ -1,24 +1,32 @@
-import React from "react";
-import "./App.css";
-import Pagination from "./components/pagination";
+import React from "react"
+import "./App.css"
+import UiCounterRenderProps from './components/UiCounterRenderProps'
+import UiCounterHooks from './components/UiCounterHooks'
+import UiSimpleAutocomplete from './components/UiSimpleAutocomplete'
+import UiAutocompleteWithSelect from './components/UiAutocompleteWithSelect'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          Headless components with <code>Render Props</code>.
-        </p>
-
-        <div>
-          <p>
-            Headless components with <code>Custom Hooks</code>.
-          </p>
-          <Pagination />
-        </div>
+        <h1> Headless components</h1>
       </header>
+        <div>
+          <h2>
+            HC with <code>Custom Hooks</code>.
+          </h2>
+          <UiCounterHooks/>
+          <UiSimpleAutocomplete />
+          <UiAutocompleteWithSelect />
+        </div>
+        <div>
+          <h2>
+            HC with <code>Render Props</code>.
+          </h2>
+          <UiCounterRenderProps />
+        </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
