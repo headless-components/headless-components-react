@@ -6,10 +6,10 @@ const UiCounterHooks = () => {
 
   return (
     <div>
-      <h4>Counter component with Custom Hooks</h4>
+      <h4>Counter component with Custom Hooks with limits from (-5, infinite) </h4>
       <p>Page number: {count}</p>
       <button onClick={() => decrement(1, 1)}>back page</button>
-      <button onClick={() => increment(1, 5)}>next page</button>
+      <button onClick={() => increment(1)}>next page</button>
     </div>
   )
 }

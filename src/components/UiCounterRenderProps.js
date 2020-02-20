@@ -8,7 +8,7 @@ const UiCounterRenderProps = () => {
         {({ count, increment, decrement }) => {
           return (
             <div>
-              <h4>Counter component with Render Props</h4>
+              <h4>Counter component with Render Props and limits from (-5, 10) </h4>
               <button onClick={() => decrement(1, -5)}>-</button>
               <button>{count}</button>
               <button onClick={() => increment(1, 10)}>+</button>
