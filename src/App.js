@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Counter from "./components/counter";
+// import Counter from "./components/counter";
 import "./App.css"
 import UiCounterRenderProps from './components/UiCounterRenderProps'
 import UiCounterHooks from './components/UiCounterHooks'
