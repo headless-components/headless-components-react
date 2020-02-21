@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Pagination from "./components/pagination";
+import Counter from "./components/counter";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
           <p>
             Headless components with <code>Custom Hooks</code>.
           </p>
-          <Pagination />
+          <Counter />
         </div>
       </header>
     </div>
