@@ -1,7 +1,18 @@
 import React from "react";
 import "./App.css";
 
-import { UiCounterHooks, UiSimpleAutocomplete, UiAutocompleteWithSelect, Uidropdown, Uipagination, Uislider, Uiswitch, Uitable, Uitoggle, UiautoComplete, UiCounterRenderProps } from './components/index';
+import { 
+  UiCounterHooks, 
+  UiSimpleAutocomplete, 
+  UiAutocompleteWithSelect, 
+  Uidropdown, 
+  Uipagination, 
+  Uislider, 
+  Uiswitch, 
+  Uitable, 
+  Uitoggle, 
+  UiautoComplete, 
+  UiCounterRenderProps } from './components/index';
 
 function App() {
   return (
@@ -24,6 +35,7 @@ function App() {
           <Uipagination  totalItems={150} itemsPerPage={10} window={4} initialPage={1} />
           <Uislider />
           <Uitable />
+          {/* <UiTabs /> */}
         </div>
         <div>
           <h2>

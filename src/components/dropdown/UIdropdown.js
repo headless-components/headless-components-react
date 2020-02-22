@@ -1,9 +1,9 @@
 import React from 'react';
 
-import useToggle from "../../hc-hooks/useToggle";
+import useToggle from "../../hc-hooks/useToggle/useToggle";
 import "./dropdown.css";
 
-function Dropdown({ name }) {
+function UiDropdown({ name }) {
   let { toggled, setToggle } = useToggle();
   console.log(toggled)
 
@@ -50,4 +50,4 @@ function Dropdown({ name }) {
   );
 }
 
-export default Dropdown;
+export default UiDropdown;

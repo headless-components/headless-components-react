@@ -1,9 +1,9 @@
 import React from 'react';
 
-import useToggle from "../../hc-hooks/useToggle";
+import useToggle from "../../hc-hooks/useToggle/useToggle";
 import './switch.css';
 
-function Switch({ name }) {
+function UiSwitch({ name }) {
   let { toggled, setToggle } = useToggle();
 
   return (
@@ -22,4 +22,4 @@ function Switch({ name }) {
   );
 }
 
-export default Switch;
+export default UiSwitch;

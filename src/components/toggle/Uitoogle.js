@@ -1,8 +1,8 @@
 import React from 'react';
 
-import useToggle from "../../hc-hooks/useToggle";
+import useToggle from "../../hc-hooks/useToggle/useToggle";
 
-function Toggle({ name }) {
+function UiToggle({ name }) {
   let { toggled, setToggle } = useToggle();
 
   return (
@@ -15,5 +15,5 @@ function Toggle({ name }) {
   );
 }
 
-export default Toggle;
+export default UiToggle;
 

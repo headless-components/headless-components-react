@@ -9,6 +9,7 @@ import Uiswitch from './switch/Uiswitch'
 import Uitable from './table/Uitable'
 import Uitoggle from './toggle/Uitoogle'
 import UiautoComplete from './autocomplete/Uiautocomplete';
+import UiTabs from './tabs/Uitabs';
 
 export {
   UiCounterRenderProps,
@@ -21,5 +22,6 @@ export {
   Uiswitch,
   Uitable,
   Uitoggle,
-  UiautoComplete
+  UiautoComplete,
+  UiTabs
 }
