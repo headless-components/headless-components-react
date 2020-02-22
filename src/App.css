@@ -20,17 +20,6 @@ p {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 50vh;
@@ -46,123 +35,9 @@ p {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
-/* Switch */
-.switch-checkbox {
-  display: none;
-}
 
-.switch-container {
-  width: 400px;
-  height: 200px;
-  background-color: #de8797;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.2s;
-  color: white;
-  margin-bottom: 30px;
-}
 
-.switch-container.active {
-  background-color: #87ded2;
-}
 
-.switch-label:after {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-  position: absolute;
-  background-color: white;
-  display: inline-block;
-  content: "";
-  left: 2px;
-  transition: left 0.3s ease;
-}
 
-.active .switch-label:after {
-  left: calc(100% - 32px);
-}
 
-.switch-label {
-  width: 100px;
-  height: 38px;
-  border-radius: 20px;
-  position: relative;
-  transition: all 0.3s ease;
-  border: 2px solid white;
-}
-
-/* Dropdown */
-
-.dropdown {
-  max-height: 68px;
-  transition: max-height 1s;
-}
-
-.dropdown-content {
-  border-left: 1px solid skyblue;
-  border-right: 1px solid skyblue;
-  border-bottom: 1px solid skyblue;
-}
-
-.dropdown-item {
-  padding: 20px;
-  color: skyblue;
-  border: 1px solid skyblue;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: bold;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.dropdown-arrow {
-  display: block;
-  transition: transform 0.2s ease;
-}
-
-.dropdown-arrow svg {
-  display: block;
-  fill: skyblue;
-}
-
-.active .dropdown-arrow {
-  transform: rotate(180deg);
-}
-
-.dropdown-content a {
-  text-decoration: none;
-  padding: 20px;
-  display: block;
-  color: inherit;
-}
-
-.dropdown-content li {
-  border-bottom: 1px solid skyblue;
-  color: skyblue;
-}
-
-.dropdown-content li:hover {
-  background-color: skyblue;
-  color: white;
-}
-
-.dropdown-content li:last-child {
-  border-bottom: 0;
-}
-
-.dropdown.active {
-  max-height: 300px;
-}
