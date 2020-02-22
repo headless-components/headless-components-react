@@ -1,0 +1,13 @@
+th,
+td {
+  border: 1px solid #eee;
+  padding: 10px;
+}
+
+.table {
+  margin: 0 auto;
+}
+
+.warning {
+  color: red;
+}

@@ -1,13 +1,12 @@
 import React from "react";
 
-import { usePagination } from "./usePagination";
+import {usePagination} from '../../hc-hooks/usePagination';
+import './pagination.css';
 
 function Pagination(props) {
   const { currentPage, totalPages, updatePage, rangePages } = usePagination({
     ...props
   });
-
-  console.log("soy el rangePages", rangePages);
 
   const range = rangePages.length;
 
@@ -23,9 +22,10 @@ function Pagination(props) {
 
   return (
     <div>
+      <h4>Pagination using <code>usePagination</code></h4>
       <ul className="pagination-menu">
         <li className="pagination-item">
-          <a href="#" onClick={() => updatePage(prevValue(currentPage))}>
+          <a href="#prev" onClick={() => updatePage(prevValue(currentPage))}>
             Prev
           </a>
         </li>
@@ -41,7 +41,7 @@ function Pagination(props) {
                     : "pagination-item"
                 }
               >
-                <a href="#" onClick={() => updatePage(1)}>
+                <a href="#first" onClick={() => updatePage(1)}>
                   1
                 </a>
               </li>
@@ -69,7 +69,7 @@ function Pagination(props) {
                   }
                   key={page}
                 >
-                  <a href="#" onClick={() => updatePage(page)}>
+                  <a href={`#page`} onClick={() => updatePage(page)}>
                     {page}
                   </a>
                 </li>
@@ -96,7 +96,7 @@ function Pagination(props) {
                     : "pagination-item"
                 }
               >
-                <a href="#" onClick={() => updatePage(totalPages)}>
+                <a href="#last" onClick={() => updatePage(totalPages)}>
                   {totalPages}
                 </a>
               </li>
@@ -104,7 +104,7 @@ function Pagination(props) {
           </ul>
         </li>
         <li className="pagination-item">
-          <a href="#" onClick={() => updatePage(nextValue(currentPage))}>
+          <a href="#next" onClick={() => updatePage(nextValue(currentPage))}>
             Next
           </a>
         </li>

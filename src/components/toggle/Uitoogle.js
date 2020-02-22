@@ -1,6 +1,6 @@
 import React from 'react';
 
-import useToggle from '../hooks/useToggle.js';
+import useToggle from "../../hc-hooks/useToggle";
 
 function Toggle({ name }) {
   let { toggled, setToggle } = useToggle();

@@ -1,15 +1,17 @@
 import React from "react";
-import Rows from "../data/Rows";
-import Cols from "../data/Cols";
+import Rows from "../../sampleData/Rows";
+import Cols from "../../sampleData/Cols";
 
-import useTable from "./UseTable.js";
+import useTable from "../../hc-hooks/useTable";
+import './table.css';
 
 function Table() {
   const { table, sort, sortedby } = useTable(Rows, Cols);
-  console.log(table);
 
   return (
-    <table>
+    <div>
+      <h4>Basic orderer table using <code>useTable</code></h4>
+        <table className="table">
       {table.headers && (
         <thead>
           <tr>
@@ -42,6 +44,7 @@ function Table() {
         </tbody>
       )}
     </table>
+    </div>
   );
 }
 

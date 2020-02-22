@@ -1,0 +1,20 @@
+.pagination-menu,
+.pagination-inner {
+  display: inline-flex;
+}
+
+.pagination-menu {
+  border: 1px solid #ddd;
+}
+
+.pagination-item {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  border-left: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.pagination-item.active a {
+  color: red;
+}

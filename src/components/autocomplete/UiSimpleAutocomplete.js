@@ -1,7 +1,7 @@
 import React from "react"
-import useAutocompleteSimple from "../hc-hooks/useAutocompleteSimple"
+import useAutocompleteSimple from "../../hc-hooks/useAutocompleteSimple"
 
-import Data from "../sampleData/Data"
+import Data from "../../sampleData/Data"
 
 const UiAutocompleteSimple = () => {
   const { value, setValue, filter, getSelectedValue } = useAutocompleteSimple(Data)

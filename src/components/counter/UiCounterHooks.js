@@ -1,5 +1,5 @@
 import React from "react"
-import useCounter from "../hc-hooks/useCounter"
+import useCounter from "../../hc-hooks/useCounter"
 
 const UiCounterHooks = () => {
   const { count, increment, decrement } = useCounter(1)

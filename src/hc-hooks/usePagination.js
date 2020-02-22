@@ -29,15 +29,12 @@ const usePagination = ({
   if (pages <= window) {
     startPage = 1;
     endPage = pages;
-    console.log("entrooo 0");
   } else {
-    console.log("entrooo 1");
     // total pages more than max so calculate start and end pages
     let maxPagesBeforeCurrentPage = Math.floor(window / 2);
+
     let maxPagesAfterCurrentPage = Math.ceil(window / 2) - 1;
 
-    console.log("soy el maxPagesBeforeCurrentPage", maxPagesBeforeCurrentPage);
-    console.log("soy el maxPagesAfterCurrentPage", maxPagesAfterCurrentPage);
 
     if (active <= maxPagesBeforeCurrentPage) {
       // current page near the start
@@ -47,9 +44,11 @@ const usePagination = ({
       // current page near the end
       startPage = pages - window + 1;
       endPage = pages;
+
     } else {
+
       // current page somewhere in the middle
-      startPage = active - maxPagesBeforeCurrentPage;
+      startPage = parseInt(active, 10) - parseInt(maxPagesBeforeCurrentPage);
       endPage = active + maxPagesAfterCurrentPage;
     }
   }
@@ -58,8 +57,6 @@ const usePagination = ({
   let range = Array.from(Array(endPage + 1 - startPage).keys()).map(
     i => startPage + i
   );
-
-  console.log("range", range);
 
   return {
     currentPage: active,

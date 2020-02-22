@@ -6,3 +6,5 @@ function useSlider(initialSlider = 0) {
 
   return { active, setActive };
 }
+
+export default useSlider;

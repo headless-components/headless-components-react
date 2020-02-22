@@ -1,6 +1,5 @@
 import { useState } from "react";
-
-import Cols from "./Cols.js";
+import Cols from "../sampleData/Cols";
 
 function useTable(data, cols) {
   const [sortAccessor, setAccessor] = useState({ key: null, direction: "asc" });
@@ -30,7 +29,6 @@ para esto recorremos Cols, de cada col, si existe col.cell, devolvemos col.cell(
   let base = [...data];
 
   if (sortAccessor) {
-    console.log("sortAccessor", sortAccessor);
     base = base.sort(sortHandler);
   }
 
@@ -44,10 +42,6 @@ para esto recorremos Cols, de cada col, si existe col.cell, devolvemos col.cell(
     headers: getHeaders(cols),
     rows: base
   };
-
-  console.log("soy el table", table);
-
-  console.log("soy el data", data.sort());
 
   return {
     table,
