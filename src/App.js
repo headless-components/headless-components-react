@@ -1,11 +1,7 @@
 import React from "react";
 import "./App.css";
-// import Counter from "./components/counter";
-import "./App.css"
-import UiCounterRenderProps from './components/UiCounterRenderProps'
-import UiCounterHooks from './components/UiCounterHooks'
-import UiSimpleAutocomplete from './components/UiSimpleAutocomplete'
-import UiAutocompleteWithSelect from './components/UiAutocompleteWithSelect'
+
+import { UiCounterHooks, UiSimpleAutocomplete, UiAutocompleteWithSelect, Uidropdown, Uipagination, Uislider, Uiswitch, Uitable, Uitoggle, UiautoComplete, UiCounterRenderProps } from './components/index';
 
 function App() {
   return (
@@ -20,6 +16,14 @@ function App() {
           <UiCounterHooks/>
           <UiSimpleAutocomplete />
           <UiAutocompleteWithSelect />
+          <UiautoComplete />
+          <h4>Simple dropdown, switch and toogle using <code>useToggle</code></h4>
+          <Uidropdown name="dropdown" />
+          <Uiswitch name="switch" />
+          <Uitoggle name="checkbox" / >
+          <Uipagination  totalItems={150} itemsPerPage={10} window={4} initialPage={1} />
+          <Uislider />
+          <Uitable />
         </div>
         <div>
           <h2>
