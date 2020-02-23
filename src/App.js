@@ -12,7 +12,8 @@ import {
   Uitable, 
   Uitoggle, 
   UiautoComplete, 
-  UiCounterRenderProps } from './components/index';
+  UiCounterRenderProps,
+  UiTabs } from './components/index';
 
 function App() {
   return (
@@ -35,7 +36,7 @@ function App() {
           <Uipagination  totalItems={150} itemsPerPage={10} window={4} initialPage={1} />
           <Uislider />
           <Uitable />
-          {/* <UiTabs /> */}
+          <UiTabs /> 
         </div>
         <div>
           <h2>
