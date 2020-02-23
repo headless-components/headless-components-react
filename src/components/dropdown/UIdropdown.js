@@ -5,7 +5,6 @@ import "./dropdown.css";
 
 function UiDropdown({ name }) {
   let { toggled, setToggle } = useToggle();
-  console.log(toggled)
 
   return (
     <div className="dropdown-container">
