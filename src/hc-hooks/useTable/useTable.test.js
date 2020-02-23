@@ -1,6 +1,6 @@
 import { renderHook, act } from '@testing-library/react-hooks';
 
-import useTable from './usePagination';
+import useTable from './useTable';
 import Rows from "../../sampleData/Rows";
 import Cols from "../../sampleData/Cols";
 
