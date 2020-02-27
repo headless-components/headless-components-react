@@ -1,10 +1,10 @@
 import React from 'react';
 
-import useSlider from '../../hc-hooks/useSlider';
+import useSlider from '../../hc-hooks/useSlider/useSlider';
 import sliderData from '../../sampleData/SliderData';
 import './slider.css';
 
-function Slider(props) {
+function UiSlider(props) {
   let { active, setActive } = useSlider(0);
   let max = sliderData.length - 1;
   let min = 0;
@@ -55,4 +55,4 @@ function Slider(props) {
   );
 }
 
-export default Slider;
+export default UiSlider;

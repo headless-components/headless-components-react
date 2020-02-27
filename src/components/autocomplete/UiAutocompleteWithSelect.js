@@ -1,6 +1,6 @@
 import React from "react";
-import useAutocompleteSimple from "../../hc-hooks/useAutocompleteSimple";
-import useSelected from "../../hc-hooks/useSelect";
+import useAutocompleteSimple from "../../hc-hooks/useAutocompleteSimple/useAutocompleteSimple";
+import useSelected from "../../hc-hooks/useSelect/useSelect";
 import Data from "../../sampleData/Data";
 
 const AutocompleteWithSelect = () => {

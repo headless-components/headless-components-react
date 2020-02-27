@@ -8,7 +8,7 @@ const usePagination = ({
 }) => {
   // calculate total pages and save it
   const [pages, setTotalPages] = useState(Math.ceil(totalItems / itemsPerPage));
-
+  const [active, setActive] = useState(initialPage);
   // if totalItems or itemsPerPage change, recalculate totalPages
   useEffect(() => {
     setTotalPages(Math.ceil(totalItems / itemsPerPage));
@@ -20,9 +20,6 @@ const usePagination = ({
   } else if (initialPage > pages) {
     initialPage = pages;
   }
-
-  // store the active page
-  const [active, setActive] = useState(initialPage);
 
   let startPage, endPage;
 

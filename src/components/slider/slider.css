@@ -19,3 +19,7 @@
   overflow: hidden;
   margin: 0 30px;
 }
+
+.slider-container button {
+  cursor: pointer;
+}

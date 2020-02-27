@@ -1,5 +1,5 @@
 import React from "react"
-import useAutocompleteSimple from "../../hc-hooks/useAutocompleteSimple"
+import useAutocompleteSimple from "../../hc-hooks/useAutocompleteSimple/useAutocompleteSimple"
 
 import Data from "../../sampleData/Data"
 

@@ -1,9 +1,9 @@
 import React from "react";
 
-import {usePagination} from '../../hc-hooks/usePagination';
+import {usePagination} from '../../hc-hooks/usePagination/usePagination';
 import './pagination.css';
 
-function Pagination(props) {
+function UiPagination(props) {
   const { currentPage, totalPages, updatePage, rangePages } = usePagination({
     ...props
   });
@@ -18,14 +18,12 @@ function Pagination(props) {
     return num <= totalPages - 1 ? num + 1 : num;
   }
 
-  console.log(range);
-
   return (
     <div>
       <h4>Pagination using <code>usePagination</code></h4>
       <ul className="pagination-menu">
         <li className="pagination-item">
-          <a href="#prev" onClick={() => updatePage(prevValue(currentPage))}>
+          <a href="#prev" className="pagination-item-inner" onClick={() => updatePage(prevValue(currentPage))}>
             Prev
           </a>
         </li>
@@ -41,7 +39,7 @@ function Pagination(props) {
                     : "pagination-item"
                 }
               >
-                <a href="#first" onClick={() => updatePage(1)}>
+                <a href="#first" className="pagination-item-inner" onClick={() => updatePage(1)}>
                   1
                 </a>
               </li>
@@ -51,8 +49,8 @@ function Pagination(props) {
               <li
                 className={
                   currentPage === 1
-                    ? "pagination-item active"
-                    : "pagination-item"
+                    ? "pagination-item pagination-item-inner active"
+                    : "pagination-item pagination-item-inner"
                 }
               >
                 ...
@@ -69,7 +67,7 @@ function Pagination(props) {
                   }
                   key={page}
                 >
-                  <a href={`#page`} onClick={() => updatePage(page)}>
+                  <a href={`#page`} className="pagination-item-inner" onClick={() => updatePage(page)}>
                     {page}
                   </a>
                 </li>
@@ -80,8 +78,8 @@ function Pagination(props) {
               <li
                 className={
                   currentPage === 1
-                    ? "pagination-item active"
-                    : "pagination-item"
+                    ? "pagination-item pagination-item-inner active"
+                    : "pagination-item pagination-item-inner"
                 }
               >
                 ...
@@ -96,7 +94,7 @@ function Pagination(props) {
                     : "pagination-item"
                 }
               >
-                <a href="#last" onClick={() => updatePage(totalPages)}>
+                <a href="#last" className="pagination-item-inner" onClick={() => updatePage(totalPages)}>
                   {totalPages}
                 </a>
               </li>
@@ -104,7 +102,7 @@ function Pagination(props) {
           </ul>
         </li>
         <li className="pagination-item">
-          <a href="#next" onClick={() => updatePage(nextValue(currentPage))}>
+          <a href="#next" className="pagination-item-inner" onClick={() => updatePage(nextValue(currentPage))}>
             Next
           </a>
         </li>
@@ -113,4 +111,4 @@ function Pagination(props) {
   );
 }
 
-export default Pagination;
+export default UiPagination;

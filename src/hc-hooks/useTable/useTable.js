@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Cols from "../sampleData/Cols";
+import Cols from "../../sampleData/Cols";
 
 function useTable(data, cols) {
   const [sortAccessor, setAccessor] = useState({ key: null, direction: "asc" });

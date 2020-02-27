@@ -1,9 +1,9 @@
 import React from "react";
-import useAutocomplete from "../../hc-hooks/useAutocomplete";
+import useAutocomplete from "../../hc-hooks/useAutocomplete/useAutocomplete";
 
 import AutocompleteData from "../../sampleData/AutocompleteData";
 
-function Autocomplete() {
+function Uiautocomplete() {
   const { value, onInput, onSelect, filter } = useAutocomplete(AutocompleteData);
 
   return (
@@ -31,4 +31,4 @@ function Autocomplete() {
   );
 }
 
-export default Autocomplete;
+export default Uiautocomplete;

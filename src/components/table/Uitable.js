@@ -2,10 +2,10 @@ import React from "react";
 import Rows from "../../sampleData/Rows";
 import Cols from "../../sampleData/Cols";
 
-import useTable from "../../hc-hooks/useTable";
+import useTable from "../../hc-hooks/useTable/useTable";
 import './table.css';
 
-function Table() {
+function UiTable() {
   const { table, sort, sortedby } = useTable(Rows, Cols);
 
   return (
@@ -48,4 +48,4 @@ function Table() {
   );
 }
 
-export default Table;
+export default UiTable;

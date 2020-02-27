@@ -8,10 +8,14 @@
 }
 
 .pagination-item {
-  width: 50px;
   display: flex;
   justify-content: center;
   border-left: 1px solid #ddd;
+}
+
+.pagination-item-inner {
+  width: 50px;
+  display: block;
   padding: 10px 0;
 }
 
