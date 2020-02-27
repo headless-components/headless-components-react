@@ -1,5 +1,5 @@
 import React from "react"
-import CounterRenderProps from "../hc-render-props/CounterRenderProps"
+import CounterRenderProps from "../../hc-render-props/CounterRenderProps"
 
 const UiCounterRenderProps = () => {
   return (

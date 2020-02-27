@@ -1,0 +1,21 @@
+.slider-item img {
+  width: 400px;
+  height: 400px;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider {
+  display: flex;
+  transition: transform ease 0.2s;
+}
+
+.slider-wrapper {
+  max-width: 400px;
+  overflow: hidden;
+  margin: 0 30px;
+}
